@@ -1,0 +1,41 @@
+/*place le lien retour*/
+#retour{
+	margin-left: 30%;
+}
+
+/*place le lien retour*/
+#btncreation{
+	margin-left: 36%;
+}
+
+/*met en forme le lien retour*/
+a.link{
+	margin-left: 3%;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 5px;
+	color: black;
+	padding: 3px;
+	border: none;
+	border-color: darkgrey;
+	color :#313739;
+	background-color: #f8f8f8;
+}
+
+/*change la couleur de fond du lien si la souris passe dessus*/
+a.link:hover{
+	background-color: #dfe2e6;
+}
+
+/*aligne les labels et les inputs pour remplir les informations
+requises*/
+label{
+display:block;	
+float:left;
+margin-left: 20%;
+width:150px;
+}
+
+input{
+	float: left;
+}

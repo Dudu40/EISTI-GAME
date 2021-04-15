@@ -1,0 +1,47 @@
+/*placement des inputs pseudo et mot de passe*/
+#pseudo,#mdp{
+	margin-top: 5%;
+}
+
+/*placement de l'input mot de passe*/
+#mdp{
+	margin-left:10%;
+}
+
+/*placement du lien "pas encore inscrit"*/
+#leftlink{
+	margin-left: 0%;
+	margin-bottom: -10%;
+}
+
+/*placement du lien "se connecter en tant que visiteur"*/
+#rightlink{
+	margin-left: 30%;
+	margin-bottom: 10%;
+}
+
+/*mise en forme des liens de la page*/
+a.link{
+	margin-left: 3%;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 5px;
+	color: black;
+	padding: 3px;
+	border: none;
+	color :#313739;
+	background-color: #f8f8f8;
+}
+
+/*changement de la couleur de fond des liens si on passe la
+souris dessus*/
+a.link:hover{
+	background-color: #dfe2e6;
+}
+
+/*placement du bouton de connexion*/
+#connexion{
+	width: 30%;
+	margin-left: 34%;
+	margin-top: 20px;
+}

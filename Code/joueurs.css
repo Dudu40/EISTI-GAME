@@ -1,0 +1,62 @@
+/*met en forme la "loupe" de recherche*/
+.basediv button {
+  background: #e8e8e7;
+  border: none;
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 10px;
+}
+
+/*change la couleur du bouton si la souris passe dessus*/
+.basediv button:hover {
+  background: #cacfd5;
+}
+
+/*met en forme le select*/
+.customselect {
+  position: relative;
+  width: 15vw;
+  margin-left: 12vw;
+}
+
+.customselect-container {
+  position: relative; 
+  
+  background-color: #e8e8e7;
+  border: none;
+  margin: 0 0 1.5em 0;
+  border-radius: 20px;
+  
+  overflow: hidden; 
+}
+
+.customselect-container select {
+  appearance: none;
+
+  width: 110%; 
+  border-radius: 10px;
+  height: auto;
+  border: none; 
+  margin: 0;
+  padding: .25em;
+
+  
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.customselect-container::after { 
+  content: '';
+  position: absolute;
+  top: 50%; 
+  margin-top: -3px;
+  right: .75em;  
+  display: block; 
+  width: 0; height: 0;
+  border-color: transparent;
+  border-top-color: #444; 
+  border-width: 6px;
+  border-style: solid;
+  pointer-events: none;
+}

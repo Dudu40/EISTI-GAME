@@ -1,0 +1,228 @@
+/* gere le fond d'ecran du jeu (background) */
+body {  /*position: fixed;*/
+        margin:0;
+        padding:0;
+        background: url(image/fond.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        }
+
+/* moddifie style du titre */
+ #title{
+    position : absolute;
+    left :10%;
+    font-family:" Blippo", "fantasy";
+    font-size : 50px;
+    top : 10%;
+    color: white;
+
+}
+
+
+
+/* moddifie style du plateau de jeu */
+#mycanvas{
+	z-index:1;
+	background: fixed;
+	position:absolute;
+	background:url(image/etoile.jpg);
+	left:200px;
+	top:10%;
+	border: 8px gold inset;
+}
+
+#mycanvas2{
+	z-index:2;
+	background: fixed;
+	position:absolute;
+	left:200px;
+	top:120px;
+	background:transparent;
+	pointer-events:none;
+}
+
+
+/* moddifie style du texte du best score en jeu */
+#bestScoreTxt{
+	position:absolute;
+	top:50px;
+	right:100px;
+	font-size:30px;
+	color:white;
+
+}
+
+
+/* moddifie style du best score en jeu */
+#bestScore{
+	position:relative;
+	left:10px;
+	font-size:30px;
+	color : gold;
+
+
+}
+
+
+/* moddifie style du texte du score en jeu */
+#scoreTxt1{
+    position : absolute;
+	top:250px;
+	right:100px;
+	font-size:30px;
+	color:white;
+	top:100px;
+}
+
+
+
+/* moddifie style du score en jeu */
+#score1{
+	position:relative;
+	left:10px;
+	font-size:30px;
+	color : red;
+
+}
+
+/* moddifie style du texte du nombre total en jeu */
+#nbTotalTxt{
+	position:absolute;
+	top:350px;
+	right:100px;
+	font-size:30px;
+	color:white;
+	top : 150px ;
+
+}
+
+
+/* moddifie style du nombre total en jeu */
+#nbTotal{
+	position:relative;
+	left:2px;
+	font-size:30px;
+	color : gold;
+
+
+}
+
+/* moddifie style du bouton restart*/
+#restart{
+	position:absolute;
+	top:20%;
+	left:70%;
+	width:170px;
+	height: 70px;
+	background-color : red;
+	font-size :20px;
+
+}
+
+/* moddifie style du bouton play */
+#play{
+
+	position:absolute;
+	top:20%;
+	left:69%;
+	width:200px;
+	height: 70px;
+	background-color : gold;
+	font-size:20px;
+
+}
+
+
+/* moddifie style du texte du score apres avoir perdu*/
+#scoreTxt2{
+	position:absolute;
+	top:300px;
+	left:65%;
+	font-size:30px;
+	color:white;
+	font-weight:bold;
+
+}
+
+/* moddifie style du texte du nombre total de monstre apres avoir perdu*/
+
+#nbTotalTxt2{
+	position:absolute;
+	top:350px;
+	left:65%;
+	font-size:30px;
+	color:white;
+	font-weight:bold;
+}
+
+
+/* moddifie style du score apres avoir perdu*/
+#score2{
+	position:relative;
+	font-size:30px;
+	color : gold;
+	left:20%;
+
+
+}
+
+/* moddifie style du texte du nombre total de monstres apres avoir perdu*/
+#nbTotal2{
+	position:relative;
+	font-size:30px;
+	color : gold;
+	left:10%;
+}
+
+
+
+/* aligne les stats*/
+#stat {
+	text-align: center;
+	left : 80%;
+}
+
+/* position du bouton pause*/
+#Pause{
+	position:absolute;
+	left:50px;
+	top:100px;
+}
+
+/* design du texte d'intro*/
+
+#presentation {
+    border-style : solid;
+    width : 20%;
+    background-color:black;
+    position : absolute ;
+    color :gold;
+    top : 45%;
+    left: 4%;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+/* position de la medaille*/
+
+#medaille {
+    position :absolute;
+    top : 30%;
+    left : 3%;
+}
+
+/* positionne et met en forme le tableau de scores du jeu*/
+#tabscore{
+	position : absolute ;
+	background-image:linear-gradient(to bottom, #34495e, white);
+	border-style: none;
+	border-radius: 10px;
+	width: 15%;
+	height: 20%
+	margin-top : 50%;
+	right: 3%;
+	padding: 10px;
+}

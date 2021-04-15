@@ -1,0 +1,55 @@
+/*mise en forme du div central de la page contennant les informations
+générales*/
+div.page{
+	display:block;
+	float:left; 
+	background-image: linear-gradient(to top left, #5d6d7e, white);
+	text-decoration:none;
+	padding:5px;
+	border:1px solid;
+	width: 40%;
+	border-color:darkgreen;  
+	text-align: center;
+	margin-left: 29%;
+	border-radius: 10px;
+	margin-top: 5%;
+}
+
+/*mise en forme du div contennant le tableau des scores*/
+div.table{
+	display:block;
+	float:left; 
+	background-image: linear-gradient(to top left, #5d6d7e, white);
+	text-decoration:none;
+	padding:5px;
+	border:1px solid;
+	width: 15%;
+	border-color:darkgreen;  
+	text-align: center;
+	margin-left: 5%;
+	border-radius: 10px;
+	margin-top: 5%;
+}
+
+/*mise en forme du div permettant de modifier les informations
+du profil*/
+div.profilmodif{
+	position : absolute ;
+	display:block;
+	float:left; 
+	background-image: linear-gradient(to top left, #5d6d7e, white);
+	text-decoration:none;
+	padding:5px;
+	border:1px solid;
+	width: 23%;
+	border-color:darkgreen;  
+	text-align: center;
+	margin-left: -26%;
+	border-radius: 10px;
+	margin-top: -25.15%;
+}
+
+/*couleur du message d'accueil*/
+#msgaccueil{
+	color: #236126;
+}

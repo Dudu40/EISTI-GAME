@@ -1,0 +1,209 @@
+/*met en forme le div permettant de selectionner un joueur parmi
+la liste des joueurs*/
+div.liste{
+	display:block;
+	float:left; 
+	background-image: linear-gradient(to bottom right, #5d6d7e, white);
+	text-decoration:none;
+	padding:5px;
+	border:1px solid;
+	width: 20%;
+	border-color:darkgreen;  
+	text-align: center;
+	margin-left: 5%;
+	margin-top: 10px;
+	border-radius: 10px;
+}
+
+/*met en forme le div permettant de selectionner un joueur parmi
+la liste des joueurs qui vous ont envoyé un message*/
+div.liste2{
+	display:block;
+	float:left; 
+	background-image: linear-gradient(to bottom right, #5d6d7e, white);
+	text-decoration:none;
+	padding:5px;
+	border:1px solid;
+	width: 20%;
+	height: 15%;
+	border-color:darkgreen;  
+	text-align: center;
+	margin-left: -21vw;
+	border-radius: 10px;
+	margin-top: 17vw;
+	/*conserve la taille du div si la quantité d'informations contenues
+	dépasse la taille maximale, et créé une scroll bar*/
+	overflow:auto;
+	overflow-x: hidden;
+	height: 15vw;
+	
+}
+
+/*met en forme le div principal de la page permetant d'afficher les conversations*/
+div.page{
+	display:block;
+	float:left; 
+	background-image: linear-gradient(to bottom right, #5d6d7e, white);
+	text-decoration:none;
+	padding:5px;
+	border:1px solid;
+	width: 40%;
+	height: 30vw;
+	/*conserve la taille du div si la quantité d'informations contenues
+	dépasse la taille maximale, et créé une scroll bar*/
+	overflow:auto;
+	overflow-x: hidden;
+	border-color:darkgreen;  
+	text-align: center;
+	margin-left: 5vw;
+	margin-top: 10px;
+	border-radius: 10px;
+}
+
+/*met en forme la "loupe" de recherche*/
+.liste button {
+  background: #e8e8e7;
+  border: none;
+  cursor: pointer;
+  padding: 7px 10px;
+  border-radius: 10px;
+  margin-left: 0.5vw;
+}
+/*change la couleur du bouton si la souris passe dessus*/
+.liste button:hover {
+  background: #cacfd5;
+}
+
+/*met en forme le select*/
+.customselect {
+  position: relative;
+  width: 15vw;
+  margin-left: 2vw;
+}
+
+.customselect-container {
+  position: relative; 
+  
+  background-color: #fff;
+  border: none;
+  margin: 0 0 1.5em 0;
+  border-radius: 20px;
+  
+  overflow: hidden; 
+}
+
+.customselect-container select {
+  appearance: none;
+
+  width: 110%; 
+  border-radius: 10px;
+  height: auto;
+  border: none; 
+  margin: 0;
+  padding: .25em;
+
+  
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.customselect-container::after { 
+  content: '';
+  position: absolute;
+  top: 50%; 
+  margin-top: -3px;
+  right: .75em;  
+  display: block; 
+  width: 0; height: 0;
+  border-color: transparent;
+  border-top-color: #444; 
+  border-width: 6px;
+  border-style: solid;
+  pointer-events: none;
+}
+
+
+/*met en forme et place les messages reçus*/
+div[name=recu]{
+	background-color: #8ed0cf;
+	text-align: left;
+	width: 60%;
+	border-radius: 20px;
+	word-wrap: break-word;
+}
+/*met en forme et place les messages envoyés*/
+div[name=envoye]{
+	background-color: #91d08e;
+	text-align: right;
+	width: 60%;
+	border-radius: 20px;
+	margin-left: 40%;
+	word-wrap: break-word;
+}
+
+/*met en forme et place les informations sur le pseudo de l'auteur du message et l'heure d'envoi*/
+p[name=envoye].user, p[name=envoye].heure{
+	font-size: 10px;
+	margin-right: 3%;
+	color: #5a975d;
+}
+
+/*met en forme et place les informations sur le pseudo de l'auteur du message et l'heure d'envoi*/
+p[name=recu].user, p[name=recu].heure{
+	font-size: 10px;
+	margin-left: 3%;
+	color: #4c7c7c;
+}
+
+/*décale le contenu du message reçu*/
+span[name=recu]{
+	margin-left: 2%;
+}
+
+/*décale le contenu du message envoyé*/
+span[name=envoye]{
+	margin-right: 2%;
+}
+
+/*met en forme le div permettant d'écrire un message*/
+.champtxt{
+	border: none;
+	position:fixed;
+	top : 71.5%;
+	width: 30%;
+	margin-left: 10%;
+	border-radius: 10px;
+	background-color: #bcc2c9;
+	padding: 5px;
+    
+}
+
+/*met en forme et place le bouton envoyer*/
+#msgbtn{
+	border-radius: 10px;
+	padding-top: 5px;
+	margin-left: 10%;
+}
+
+/*change la taille de l'input permettant d'écrire le message*/
+#message{
+	width: 70%;
+}
+
+/*met en forme les boutons de la liste de joueurs qui ont communiqué
+avec vous*/
+input.btnlist, button.btnlist{
+	background-color: #236126;
+	border-radius: 20px;
+	text-align: center;
+	padding: 5px;
+	width: 50%;
+	border : none;
+	color: white;
+}
+
+/*change la couleur de ces boutons si la souris est au dessus*/
+.btnlist:hover{
+	background-color: #2c7c2f;
+}
